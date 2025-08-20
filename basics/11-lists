@@ -1,2 +1,2 @@
 #!/bin/bash
-Ls -la . .. /tmp/holbertonschool-shell/basics/boot
+Ls -la . .. /boot
