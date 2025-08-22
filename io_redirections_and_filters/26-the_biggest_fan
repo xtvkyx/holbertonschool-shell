@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR>1 {c[$1]++} END{for (h in c) print c[h], h}' | sort -rn | head -n 11 | awk '{print $2}'
+awk -F'\t' 'FNR>1{c[$1]++} END{for(h in c) print c[h],h}' | sort -rn | head -n 11 | awk '{print $2}'
