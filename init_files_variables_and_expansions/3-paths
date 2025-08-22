@@ -1,2 +1,2 @@
 #!/bin/bash
-awk -F: '{print NF}' <<< "$path"
+echo "$path" tr ':' '\n' wc -1
